@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📸 My Gallery</h1>
+    <p>Explore beautiful moments captured in time</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery" id="gallery">
+
+    <div class="gallery-item" data-category="nature" data-index="0">
+      <img src="https://picsum.photos/id/10/600/400" alt="Nature 1" />
+      <div class="overlay"><span> Forest Path</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="1">
+      <img src="https://picsum.photos/id/20/600/400" alt="City 1" />
+      <div class="overlay"><span> City Lights</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="animals" data-index="2">
+      <img src="https://picsum.photos/id/237/600/400" alt="Animals 1" />
+      <div class="overlay"><span> Cute Pup</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature" data-index="3">
+      <img src="https://picsum.photos/id/15/600/400" alt="Nature 2" />
+      <div class="overlay"><span> Ocean View</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="4">
+      <img src="https://picsum.photos/id/42/600/400" alt="City 2" />
+      <div class="overlay"><span> Night Bridge</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="animals" data-index="5">
+      <img src="https://picsum.photos/id/200/600/400" alt="Animals 2" />
+      <div class="overlay"><span> Wild Cow </span></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature" data-index="6">
+      <img src="https://picsum.photos/id/28/600/400" alt="Nature 3" />
+      <div class="overlay"><span> Trees</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="city" data-index="7">
+      <img src="https://picsum.photos/id/60/600/400" alt="City 3" />
+      <div class="overlay"><span> Street Life</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="animals" data-index="8">
+      <img src="https://picsum.photos/id/169/600/400" alt="Animals 3" />
+      <div class="overlay"><span> Dogs </span></div>
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lb-close">✕</button>
+    <button class="lb-prev" id="lb-prev">&#8249;</button>
+    <button class="lb-next" id="lb-next">&#8250;</button>
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="Lightbox Image" />
+      <p id="lb-caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by <span>Awais Ramzan</span> | CodeAlpha Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
